@@ -1,42 +1,145 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF7ED;
+    font-family: "Inter", sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body::-webkit-scrollbar {
+    display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-.card {
-  padding: 2em;
+header {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    padding-block: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+header .site-logo {
+    color: black;
+    margin-right: auto;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+header a {
+    text-decoration: none;
+    color: #4d4d4d;
+    font-weight: 600;
+    padding: 5px 20px;
+}
+
+header a:hover {
+    color: #161616;
+    text-decoration: underline;
+}
+
+/* ** BUTTON ** */
+.link-button {
+    display: inline-block;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    color: initial;
+    font-weight: 799;
+    cursor: pointer;
+    padding: .75rem 1.375rem;
+    transition: trasnform .1s ease-in-out;
+}
+
+.link-button:hover {
+    transform: translate(1px, 1px);
+}
+
+/* ** HOME PAGE ** */
+.home-container {
+    min-height: 350px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("./assets/home-hero.png") no-repeat center center;
+    padding: 45px 23px;
+    color: white;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.home-container h1 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 44px;
+}
+
+.home-container p {
+    line-height: 24px;
+}
+
+.home-container a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FF8C38;
+    border: none;
+    width: 100%;
+    margin-top: 27px;
+    padding-block: .75rem;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .1s ease-in-out;
+}
+
+.home-container a:hover {
+    transform: translate(1px, 1px);
+}
+
+/* ** ABOUT PAGE ** */
+.about-hero-image {
+    width: 100%;
+}
+
+.about-page-content {
+    padding-inline: 23px;
+    color: #161616;
+    margin-bottom: 55px;
+}
+
+.about-page-content h1 {
+    line-height: 38px;
+}
+
+.about-page-content p {
+    line-height: 22px;
+}
+
+.about-page-cta {
+    background-color: #FFCC8D;
+    color: #161616;
+    padding-inline: 32px;
+    padding-bottom: 32px;
+    margin-inline: 27px;
+    border-radius: 5px;
+}
+
+.about-page-cta h2 {
+    margin: 0;
+    padding-block: 37px;
+}
+
+.about-page-cta .link-button {
+    background-color: #161616;
+    color: white;
+    border-radius: 10px;
 }
