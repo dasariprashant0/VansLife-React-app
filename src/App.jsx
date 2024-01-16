@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import { About, Home, VanDetail, Vans } from "./pages";
+import { About, Dashboard, Home, Income, Reviews, VanDetail, Vans } from "./pages";
 import "./server";
 import Layout from "./components/Layout";
 
@@ -13,6 +13,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/vans" element={<Vans />} />
           <Route path="/vans/:id" element={<VanDetail />} />
+          <Route path="/host" element={<Dashboard />}/>
+          <Route path="/host/income" element={<Income />}/>
+          <Route path="host/reviews" element={<Reviews />}/>
         </Route>
       </Routes>
     </BrowserRouter>
