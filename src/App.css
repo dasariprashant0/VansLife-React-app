@@ -52,6 +52,11 @@ header a:hover {
     text-decoration: underline;
 }
 
+a.activeLink {
+    text-decoration: underline;
+    color: #161616;
+}
+
 main {
     margin-bottom: 80px;
 }
