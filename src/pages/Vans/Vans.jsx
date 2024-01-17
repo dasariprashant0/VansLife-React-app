@@ -31,7 +31,12 @@ const Vans = () => {
   return (
     <div className="van-list-container">
       <h1>Explore our van options</h1>
-      <div className="van-list">{vanElements}</div>
+
+      {vans.length > 0 ? (
+        <div className="van-list">{vanElements}</div>
+      ) : (
+        <h2 className="data-loader">LOADING....</h2>
+      )}
     </div>
   );
 };

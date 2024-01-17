@@ -4,6 +4,8 @@ import {
   About,
   Dashboard,
   Home,
+  HostVanDetails,
+  HostVans,
   Income,
   Reviews,
   VanDetail,
@@ -26,6 +28,8 @@ function App() {
           <Route path="host" element={<HostLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="income" element={<Income />} />
+            <Route path="vans" element={<HostVans />} />
+            <Route path="vans/:id" element={<HostVanDetails />} />
             <Route path="reviews" element={<Reviews />} />
           </Route>
         </Route>

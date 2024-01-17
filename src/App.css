@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;900&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -332,4 +334,39 @@ i[class*='van-type-'] {
     text-decoration: underline;
     color: #161616;
     font-weight: 600;
+}
+
+/* ** HostVan ROUTE ** */
+.host-vans-title {
+    padding-inline: 28px;
+}
+
+.host-vans-list {
+    padding-inline: 28px;
+}
+
+.host-van-link-wrapper {
+    color: unset;
+    text-decoration: unset;
+}
+
+.host-van-single {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding-block: 18px;
+    padding-left: 28px;
+}
+
+.host-van-single > img {
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 17px;
+}
+
+.host-ven-info h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-block: 10px;
 }
