@@ -373,7 +373,7 @@ i[class*='van-type-'] {
     padding-left: 28px;
 }
 
-.host-van-single > img {
+.host-van-single>img {
     height: 80px;
     border-radius: 5px;
     margin-right: 17px;
@@ -401,7 +401,7 @@ i[class*='van-type-'] {
     align-items: center;
 }
 
-.host-van-detail > img {
+.host-van-detail>img {
     height: 160px;
     border-radius: 5px;
     margin-right: 20px;
@@ -431,10 +431,42 @@ i[class*='van-type-'] {
     font-weight: 500;
 }
 
+
 .host-van-detail-nav a:first-of-type {
     text-decoration: none;
     color: #4D4D4D;
     font-weight: 500;
     padding: 5px 15px;
     margin-left: -15px;
+}
+
+.host-van-detail-nav a:hover {
+    text-decoration: underline;
+    color: #161616;
+    font-weight: 700;
+}
+
+.host-van-detail-info>h4 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.host-van-detail-info>h4>span {
+    font-weight: 400;
+}
+
+.host-van-detail-price {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.host-van-detail-price>span {
+    font-size: 18px;
+    color: #4D4D4D;
+}
+
+.host-van-detail-image {
+    height: 100px;
+    border-radius: 5px;
 }

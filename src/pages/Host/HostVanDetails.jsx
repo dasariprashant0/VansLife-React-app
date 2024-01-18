@@ -12,7 +12,7 @@ const HostVanDetails = () => {
   }, [id]);
 
   const activeLink = {
-    fontWeight: "bold",
+    fontWeight: "700",
     textDecoration: "underline",
     color: "#161616",
   };
@@ -31,7 +31,7 @@ const HostVanDetails = () => {
               width={150}
             />
             <div className="host-van-detail-info-text">
-              <i className={`van-type van-type-${currentVan.type}`}>
+              <i className={`van-type ${currentVan.type} selected`}>
                 {currentVan.type}
               </i>
               <h3>{currentVan.name}</h3>
@@ -60,7 +60,8 @@ const HostVanDetails = () => {
               Photos
             </NavLink>
           </nav>
-          <Outlet />
+
+          <Outlet context={{ currentVan }} />
         </div>
       ) : (
         <h2 className="data-loader">LOADING....</h2>
