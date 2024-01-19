@@ -13,7 +13,7 @@ const HostVanInfo = () => {
       </h4>
       <h4>
         Description: <span>{currentVan.description}</span>
-      </h4>{" "}
+      </h4>
     </section>
   );
 };
