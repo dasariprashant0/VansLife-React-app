@@ -41,13 +41,13 @@ header .site-logo {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 25px;
-    padding: 5px 20px;
 }
 
 header a {
     text-decoration: none;
     color: #4D4D4D;
     font-weight: 600;
+    padding: 5px 20px;
 }
 
 header a:hover {
@@ -56,8 +56,7 @@ header a:hover {
 }
 
 header nav a{
-    border: 1px solid;
-    padding: 5px 12px;
+    padding: 5px 15px;
 }
 
 a.activeLink {
