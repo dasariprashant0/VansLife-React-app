@@ -19,7 +19,7 @@ const Header = () => {
         </NavLink>
         <NavLink
           to={"/vans"} className={({ isActive }) => isActive ? "activeLink" : null}>
-          VANS
+          Vans
         </NavLink>
       </nav>
     </header>

@@ -20,7 +20,7 @@ const Vans = () => {
   const vanElements = displayVans.map((van) => (
     <div key={van.id} className="van-title">
       <Link
-        to={`/vans/${van.id}`}
+        to={van.id}
         aria-label={`View details for ${van.name}, priced $${van.price} / per day`}
       >
         <img src={van.imageUrl} alt={`Image of ${van.name}`} />
