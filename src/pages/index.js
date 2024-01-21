@@ -1,6 +1,6 @@
 import Home from "./Home";
 import About from "./About";
-import Vans from "./Vans/Vans";
+import Vans from "./vans/Vans";
 import VanDetail from "./Vans/VanDetail";
 import Dashboard from "./Host/Dashboard";
 import Income from "./Host/Income";
@@ -10,6 +10,7 @@ import HostVanInfo from "./Host/HostVanInfo";
 import HostVanPricing from "./Host/HostVanPricing";
 import HostVanPhotos from "./Host/HostVanPhotos";
 import Reviews from "./Host/Reviews";
+import NotFound from "./NotFound";
 
 export {
   Home,
@@ -24,4 +25,5 @@ export {
   HostVanPricing,
   HostVanPhotos,
   Reviews,
+  NotFound,
 };
