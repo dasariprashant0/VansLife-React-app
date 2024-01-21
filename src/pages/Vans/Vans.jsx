@@ -21,6 +21,7 @@ const Vans = () => {
     <div key={van.id} className="van-title">
       <Link
         to={van.id}
+        state={{ search: `?${searchParams.toString()} ` }}
         aria-label={`View details for ${van.name}, priced $${van.price} / per day`}
       >
         <img src={van.imageUrl} alt={`Image of ${van.name}`} />
