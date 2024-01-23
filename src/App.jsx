@@ -24,13 +24,19 @@ import {
 import "./server";
 import Layout from "./components/Layout";
 import HostLayout from "./components/HostLayout";
+import Error from "./components/Error";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<Layout />}>
       <Route path="/" element={<Home />} />
       <Route path="about" element={<About />} />
-      <Route path="vans" element={<Vans />} loader={vansLoader} />
+      <Route
+        path="vans"
+        element={<Vans />}
+        errorElement={<Error />}
+        loader={vansLoader}
+      />
       <Route path="vans/:id" element={<VanDetail />} />
 
       <Route path="host" element={<HostLayout />}>
