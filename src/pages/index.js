@@ -1,6 +1,6 @@
 import Home from "./Home";
 import About from "./About";
-import Vans from "./Vans/Vans";
+import Vans, {loader as vansLoader} from "./Vans/Vans";
 import VanDetail from "./Vans/VanDetail";
 import Dashboard from "./Host/Dashboard";
 import Income from "./Host/Income";
@@ -26,4 +26,5 @@ export {
   HostVanPhotos,
   Reviews,
   NotFound,
+  vansLoader
 };

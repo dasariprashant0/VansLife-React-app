@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useLoaderData, useSearchParams } from "react-router-dom";
+import { getVans } from "../../api";
+
+export function loader() {
+  return getVans();
+}
 
 const Vans = () => {
-  const [vans, setVans] = useState([]);
+  const [error, setError] = useState(null);
   const [searchParams, setSearchParams] = useSearchParams();
+  const vans = useLoaderData(); 
 
   const typeFilter = searchParams.get("type");
-
-  useEffect(() => {
-    fetch("/api/vans")
-      .then((res) => res.json())
-      .then((data) => setVans(data.vans));
-  }, []);
 
   const displayVans = typeFilter
     ? vans.filter((van) => van.type === typeFilter)
@@ -45,6 +45,14 @@ const Vans = () => {
       }
       return prevParams;
     });
+  }
+
+  if (error) {
+    return (
+      <h2 aria-live="assertive" className="data-loader">
+        There was an error: {error.message}
+      </h2>
+    );
   }
 
   return (
@@ -85,11 +93,7 @@ const Vans = () => {
         ) : null}
       </div>
 
-      {vans.length > 0 ? (
-        <div className="van-list">{vanElements}</div>
-      ) : (
-        <h2 className="data-loader">LOADING....</h2>
-      )}
+      <div className="van-list">{vanElements}</div>
     </div>
   );
 };

@@ -122,6 +122,7 @@ footer {
 /* ** DATA LOADING TEXT ** */
 .data-loader {
     margin-top: 200px;
+    padding-inline: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -361,7 +362,7 @@ i[class*='van-type-'] {
 
 .host-nav a {
     text-decoration: none;
-    color: #4D4D4D;
+    color: #4D4D4D; 
     font-weight: 500;
     padding: 5px 20px;
     transition: all .2s ease-in-out;
