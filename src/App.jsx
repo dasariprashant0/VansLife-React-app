@@ -20,6 +20,8 @@ import {
   Reviews,
   VanDetail,
   Vans,
+  hostVanDetailLoader,
+  hostVanLoader,
   vanDetailLoader,
   vansLoader,
 } from "./pages";
@@ -40,18 +42,18 @@ const router = createBrowserRouter(
         errorElement={<Error />}
         loader={vansLoader}
       />
-      <Route
-        path="vans/:id"
-        element={<VanDetail />}
-        loader={vanDetailLoader}
-      />
+      <Route path="vans/:id" element={<VanDetail />} loader={vanDetailLoader} />
 
       <Route path="host" element={<HostLayout />}>
         <Route index element={<Dashboard />} />
         <Route path="income" element={<Income />} />
-        <Route path="vans" element={<HostVans />} />
+        <Route path="vans" element={<HostVans />} loader={hostVanLoader} />
 
-        <Route path="vans/:id" element={<HostVanDetails />}>
+        <Route
+          path="vans/:id"
+          element={<HostVanDetails />}
+          loader={hostVanDetailLoader}
+        >
           <Route index element={<HostVanInfo />} />
           <Route path="pricing" element={<HostVanPricing />} />
           <Route path="photos" element={<HostVanPhotos />} />
