@@ -1,7 +1,7 @@
 import Home from "./Home";
 import About from "./About";
 import Vans, { loader as vansLoader } from "./Vans/Vans";
-import VanDetail from "./Vans/VanDetail";
+import VanDetail, { loader as vanDetailLoader } from "./Vans/VanDetail";
 import Dashboard from "./Host/Dashboard";
 import Income from "./Host/Income";
 import HostVans from "./Host/HostVans";
@@ -28,5 +28,6 @@ export {
   Reviews,
   NotFound,
   vansLoader,
+  vanDetailLoader,
   Login,
 };

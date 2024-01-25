@@ -20,6 +20,7 @@ import {
   Reviews,
   VanDetail,
   Vans,
+  vanDetailLoader,
   vansLoader,
 } from "./pages";
 import "./server";
@@ -39,7 +40,11 @@ const router = createBrowserRouter(
         errorElement={<Error />}
         loader={vansLoader}
       />
-      <Route path="vans/:id" element={<VanDetail />} />
+      <Route
+        path="vans/:id"
+        element={<VanDetail />}
+        loader={vanDetailLoader}
+      />
 
       <Route path="host" element={<HostLayout />}>
         <Route index element={<Dashboard />} />
