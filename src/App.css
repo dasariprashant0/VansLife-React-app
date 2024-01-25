@@ -22,8 +22,8 @@ body {
 }
 
 .site-wrapper {
-    max-height: 100vh;
-    max-width: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     flex-direction: column;
 }
@@ -66,14 +66,13 @@ header .login-icon {
 }
 
 header nav a {
-    padding: 5px 10px;
+    padding: 5px 15px;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
 }
 
 a.activeLink {
