@@ -1,11 +1,5 @@
-import React, { useEffect, useState } from "react";
-import {
-  Link,
-  NavLink,
-  Outlet,
-  useLoaderData,
-  useParams,
-} from "react-router-dom";
+import React from "react";
+import { Link, NavLink, Outlet, useLoaderData } from "react-router-dom";
 import { getHostVans } from "../../api";
 
 export function loader({ params }) {
