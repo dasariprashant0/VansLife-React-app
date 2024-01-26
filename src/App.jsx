@@ -22,6 +22,7 @@ import {
   Vans,
   hostVanDetailLoader,
   hostVanLoader,
+  loginLoader,
   vanDetailLoader,
   vansLoader,
 } from "./pages";
@@ -36,7 +37,7 @@ const router = createBrowserRouter(
     <Route element={<Layout />}>
       <Route path="/" element={<Home />} />
       <Route path="about" element={<About />} />
-      <Route path="login" element={<Login />} />
+      <Route path="login" element={<Login />} loader={loginLoader} />
       <Route
         path="vans"
         element={<Vans />}

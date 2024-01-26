@@ -13,7 +13,7 @@ import HostVanPricing from "./Host/HostVanPricing";
 import HostVanPhotos from "./Host/HostVanPhotos";
 import Reviews from "./Host/Reviews";
 import NotFound from "./NotFound";
-import Login from "./Login";
+import Login, { loader as loginLoader } from "./Login";
 
 export {
   Home,
@@ -34,4 +34,5 @@ export {
   hostVanLoader,
   hostVanDetailLoader,
   Login,
+  loginLoader,
 };
