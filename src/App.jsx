@@ -22,6 +22,7 @@ import {
   Vans,
   hostVanDetailLoader,
   hostVanLoader,
+  loginAction,
   loginLoader,
   vanDetailLoader,
   vansLoader,
@@ -37,7 +38,12 @@ const router = createBrowserRouter(
     <Route element={<Layout />}>
       <Route path="/" element={<Home />} />
       <Route path="about" element={<About />} />
-      <Route path="login" element={<Login />} loader={loginLoader} />
+      <Route
+        path="login"
+        element={<Login />}
+        loader={loginLoader}
+        action={loginAction}
+      />
       <Route
         path="vans"
         element={<Vans />}

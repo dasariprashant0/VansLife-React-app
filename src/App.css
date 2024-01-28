@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 
 html,
@@ -459,6 +460,7 @@ i[class*='van-type-'] {
 
 .host-van-detail-nav {
     display: flex;
+    justify-content: flex-start;
     margin-block: 25px;
 }
 

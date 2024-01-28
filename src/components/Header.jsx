@@ -1,8 +1,13 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import avatarIcon from "../assets/avatar-icon.png";
+import shutdownIcon from "../assets/shutdown-icon.png";
 
 const Header = () => {
+  function fakeLogOut() {
+    localStorage.removeItem("loggedin");
+  }
+
   return (
     <header>
       <NavLink className="site-logo" to={"/"}>
@@ -30,6 +35,9 @@ const Header = () => {
         <Link to={"login"} className="login-link">
           <img src={avatarIcon} alt="Avatar Icon" className="login-icon" />
         </Link>
+        <button onClick={fakeLogOut}>
+          <img src={shutdownIcon} alt="logout icon" className="login-icon" />
+        </button>
       </nav>
     </header>
   );
