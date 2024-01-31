@@ -9,7 +9,7 @@ export function loader() {
 const Vans = () => {
   const [error, setError] = useState(null);
   const [searchParams, setSearchParams] = useSearchParams();
-  const vans = useLoaderData(); 
+  const vans = useLoaderData();
 
   const typeFilter = searchParams.get("type");
 

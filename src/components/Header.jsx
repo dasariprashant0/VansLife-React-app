@@ -6,6 +6,7 @@ import shutdownIcon from "../assets/shutdown-icon.png";
 const Header = () => {
   function fakeLogOut() {
     localStorage.removeItem("loggedin");
+    location.reload();
   }
 
   return (
@@ -13,7 +14,7 @@ const Header = () => {
       <NavLink className="site-logo" to={"/"}>
         #VANLIFE
       </NavLink>
-      <nav>
+      <nav className="header-nav">
         <NavLink
           to={"/host"}
           className={({ isActive }) => (isActive ? "activeLink" : null)}

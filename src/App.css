@@ -67,7 +67,7 @@ header nav a {
     padding: 5px 12px;
 }
 
-nav {
+.header-nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -460,7 +460,6 @@ i[class*='van-type-'] {
 
 .host-van-detail-nav {
     display: flex;
-    justify-content: flex-start;
     margin-block: 25px;
 }
 
