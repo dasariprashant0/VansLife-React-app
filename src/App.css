@@ -381,6 +381,7 @@ i[class*='van-type-'] {
 /* ** HOST PAGE ** */
 .host-nav {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .host-nav a {
@@ -439,12 +440,14 @@ i[class*='van-type-'] {
 /* ** HostVanDetail ROUTE ** */
 .host-van-detail-layout-container {
     margin: 30px 26px;
-    padding: 24px;
+    padding: 26px;
     background-color: white;
 }
 
 .host-van-detail {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
 }
 
@@ -474,7 +477,7 @@ i[class*='van-type-'] {
 .host-van-detail-nav a {
     text-decoration: none;
     color: #4D4D4D;
-    padding: 5px 20px;
+    padding: 5px 15px;
     font-weight: 500;
 }
 
@@ -483,7 +486,6 @@ i[class*='van-type-'] {
     text-decoration: none;
     color: #4D4D4D;
     font-weight: 500;
-    padding: 5px 15px;
     margin-left: -15px;
 }
 
