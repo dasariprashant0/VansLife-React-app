@@ -47,6 +47,7 @@ export default function Login() {
           {status.state === "submitting" ? "Logging in..." : "Log in"}
         </button>
       </Form>
+      <p className="help">* Valid credentials: test@test.com:p123</p>
     </div>
   );
 }

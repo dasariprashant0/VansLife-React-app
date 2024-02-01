@@ -589,6 +589,11 @@ i[class*='van-type-'] {
     color: #cc0000;
 }
 
+.help {
+    font-size: 0.8rem;
+    color: #8e8e8e
+}
+
 /* Dashboard Route */
 .host-dashboard-earnings {
     background-color: #ffead0;
