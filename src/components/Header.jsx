@@ -36,9 +36,9 @@ const Header = () => {
         <Link to={"login"} className="login-link">
           <img src={avatarIcon} alt="Avatar Icon" className="login-icon" />
         </Link>
-        <button onClick={fakeLogOut}>
+        <Link onClick={fakeLogOut} className="login-link">
           <img src={shutdownIcon} alt="logout icon" className="login-icon" />
-        </button>
+        </Link>
       </nav>
     </header>
   );

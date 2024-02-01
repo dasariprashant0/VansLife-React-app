@@ -24,8 +24,8 @@ export async function action({ request }) {
     localStorage.setItem("loggedin", true);
 
     return <Navigate to={pathname} />;
-  } catch (err) {
-    return err.message;
+  } catch (error) {
+    return error.message;
   }
 }
 
@@ -40,11 +40,11 @@ export default function Login() {
       {message && <h3 className="red">{message}</h3>}
       {error && <h3 className="red">{error}</h3>}
 
-      <Form method="post" className="login-form">
+      <Form method="post" className="login-form" replace>
         <input name="email" type="email" placeholder="Email address" />
         <input name="password" type="password" placeholder="Password" />
-        <button disabled={status === "submitting"}>
-          {status === "submitting" ? "Logging in..." : "Log in"}
+        <button disabled={status.state === "submitting"}>
+          {status.state === "submitting" ? "Logging in..." : "Log in"}
         </button>
       </Form>
     </div>

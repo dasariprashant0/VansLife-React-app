@@ -2,7 +2,8 @@
 
 * {
     box-sizing: border-box;
-    /* outline: 1px solid red; */
+    scroll-behavior: smooth;
+        /* outline: 1px solid red; */
 }
 
 html,
@@ -241,11 +242,17 @@ footer {
 
 .van-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 35px;
     justify-items: center;
+    align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    
+}
+
+.van-title:hover {
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .van-title a {
