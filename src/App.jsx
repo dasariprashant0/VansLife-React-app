@@ -20,6 +20,7 @@ import {
   Reviews,
   VanDetail,
   Vans,
+  dashboardLoader,
   hostVanDetailLoader,
   hostVanLoader,
   loginAction,
@@ -62,7 +63,7 @@ const router = createBrowserRouter(
         <Route
           index
           element={<Dashboard />}
-          loader={async ({ request }) => await requireAuth(request)}
+          loader={dashboardLoader}
           errorElement={<RedirectError />}
         />
         <Route

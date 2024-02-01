@@ -13,7 +13,6 @@ export function loader() {
 }
 
 const Vans = () => {
-  const [error, setError] = useState(null);
   const [searchParams, setSearchParams] = useSearchParams();
   const vansData = useLoaderData();
 
@@ -28,14 +27,6 @@ const Vans = () => {
       }
       return prevParams;
     });
-  }
-
-  if (error) {
-    return (
-      <h2 aria-live="assertive" className="data-loader">
-        There was an error: {error.message}
-      </h2>
-    );
   }
 
   function getVansData(vans) {

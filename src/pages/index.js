@@ -2,7 +2,7 @@ import Home from "./Home";
 import About from "./About";
 import Vans, { loader as vansLoader } from "./Vans/Vans";
 import VanDetail, { loader as vanDetailLoader } from "./Vans/VanDetail";
-import Dashboard from "./Host/Dashboard";
+import Dashboard, { loader as dashboardLoader } from "./Host/Dashboard";
 import Income from "./Host/Income";
 import HostVans, { loader as hostVanLoader } from "./Host/HostVans";
 import HostVanDetails, {
@@ -36,4 +36,5 @@ export {
   Login,
   loginLoader,
   loginAction,
+  dashboardLoader,
 };

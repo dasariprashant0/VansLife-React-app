@@ -6,11 +6,11 @@ export default function RedirectError() {
   return error.status == 302 ? (
     <Navigate replace to={error.headers.map.location} />
   ) : (
-    <>
-      <h1>Error: {error.message}</h1>
+    <div className="data-loader">
+      <h3>Error: {error.message}</h3>
       <pre>
         {error.status} - {error.statusText}
       </pre>
-    </>
+    </div>
   );
 }
